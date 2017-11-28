@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>List</title>
+<link href="assets/css/common.css" rel="stylesheet">
+</head>
+
+<body>
+    <ol>
+	    {{range $.images}}
+		    <li><a href="/view?id={{.|urlquery}}">{{.|html}}</a></li>
+		{{end}}
+	</ol>
+</body>
+</html>
